@@ -1,0 +1,16 @@
+<parameters>
+<memory>256G</memory>
+<threads>12</threads>
+<storeDocs>true</storeDocs>
+<stemmer><name>krovetz</name></stemmer>
+<index>Indri-CC-News-En</index>
+<metadata> <field>docno</field></metadata>
+<field><name>mainbody</name></field>
+<field><name>title</name></field>
+<field><name>heading</name></field>
+<corpus>
+<path>/path/to/english/collection/</path>
+<class>warc</class>
+</corpus>
+</parameters>
+

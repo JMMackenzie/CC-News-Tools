@@ -1,4 +1,4 @@
-# A Tike-Lucene WARC parser for the CC-NEWS crawl
+# A Tika-Lucene WARC parser for the CC-NEWS crawl
 
 # Credits
 This version of TikaLuceneWarc is modified from the original codebase
