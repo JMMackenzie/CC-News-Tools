@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{DEFAULT} [%p] %msg%n" />
+		</Console>
+        <File 
+            name="MyFile" 
+            fileName="tikalucenewarc-${date:yyyy-MM-dd-hh-mm}.log"
+            immediateFlush="true">
+            <PatternLayout pattern="%d{DEFAULT} [%p] %msg%n" />
+        </File>
+	</Appenders>
+	<Loggers>
+		<Root level="info">
+			<AppenderRef ref="Console" />
+            <AppenderRef ref="MyFile"/>
+		</Root>
+	</Loggers>
+</Configuration>
