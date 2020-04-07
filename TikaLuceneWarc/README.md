@@ -8,6 +8,7 @@ This version of TikaLuceneWarc is modified from the original codebase
 # Requirements
 This codebase requires the pre-trained Apache OpenNLP language detection
 model, which has been included by default in the `external/` directory.
+More information can be found at [OpenNLP](http://opennlp.apache.org/models.html).
 
 # Installation
 
