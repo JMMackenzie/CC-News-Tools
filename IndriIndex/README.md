@@ -1,5 +1,13 @@
 # Building an Indri Index over CC-News-En
 
+## Requirements
+The following Indri build has been tested (and is working) with
+Indri 5.16 with gcc version 6.3.1 20170216 (Red Hat 6.3.1-3).
+We have noted some issues with segmentation faults if a more recent
+version of gcc is used (such as gcc version 8.3.1 20190311 (Red Hat 8.3.1-3)).
+Please file any appropriate tickets with the
+[Lemur Project](https://sourceforge.net/p/lemur/bugs/).
+
 ## Build Indri
 Download and build Indri. We'll use the mirror on Github hosted by
 [Luke Gallagher](https://github.com/lgrz).
