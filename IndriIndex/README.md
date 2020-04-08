@@ -34,6 +34,7 @@ underlying numeric document identifiers. To get a file which maps the
 textual document identifiers to the numeric identifiers, we can use the
 `docmap` tool.
 
+XXX Joel fix.
 
 
 ## Dump raw documents of interest
