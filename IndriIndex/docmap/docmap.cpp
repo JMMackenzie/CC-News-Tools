@@ -19,7 +19,7 @@ int main (int argc, char** argv) {
   indri::collection::CompressedCollection *collection = repo.collection();
   
   for (size_t i = 1; i <= doc_count; ++i) {
-    std::cout << collection->retrieveMetadatum( i , "docno" ) << std::endl;
+    std::cout << i << " " << collection->retrieveMetadatum( i , "docno" ) << std::endl;
   }
 
   return EXIT_SUCCESS;

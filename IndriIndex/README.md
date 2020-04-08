@@ -32,12 +32,21 @@ The output format is: `<term> <collection frequency> <document frequency>`
 The document mapping is useful, as interacting with `dumpindex` requires the
 underlying numeric document identifiers. To get a file which maps the
 textual document identifiers to the numeric identifiers, we can use the
-`docmap` tool.
+`docmap` tool. Please follow the simple build instructions in the `docmap`
+directory to build the tool. Then you can dump the document map in the form
+`<integer id> <document identifier>`
+```
+./docmap/docmap /path/to/Indri-CC-News-EN > cc-news-docids.txt
 
-XXX Joel fix.
-
+```
 
 ## Dump raw documents of interest
 In order to facilitate summarization, some users may be interested in dumping
 the raw HTML of some documents. This can be achieved via the `dumpindex` tool.
-Assume we want to dump the raw HTML from document 
+Assume we want to dump the raw HTML from a particular document. First we find
+the integer document identifier from the document map (see the previous section).
+Assume for the example that we are dumping the contents of document `12345`.
+```
+/path/to/indri/dumpindex/dumpindex /path/to/Indri-CC-News-En/ dt 12345 > 12345.html
+```
+
