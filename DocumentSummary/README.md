@@ -1,5 +1,43 @@
 # Some tools for building document summaries and speech summaries
 
+## Extracting document text and summaries
+
+### Requirements
+These scripts make use of the [newspaper3k](https://github.com/codelucas/newspaper/) Python tool.
+```
+pip3 install newspaper3k
+```
+
+### Extract document text
+In order to extract the text from a document, you will need the raw HTML representation. 
+There are a number of ways to get the raw HTML representation of a given document, and we
+provide one such method in our [Indri example](http://github.com/JMMackenzie/CC-News-Tools/IndriIndex/README.md).
+
+Let us assume we have the HTML body of a given document in the file `example.html`.
+To extract the full text of a document into a single, simple json object, use the `html-to-json.py` tool:
+```
+python html-to-json.py example.html
+```
+Example output (truncated for readability):
+```
+{
+"id":"example.html",
+"data":"ON FEBRUARY 3, A TELEVISION VIEWER in southeast Texas submitted a complaint to the Federal Communications Commission about CNN ..."
+}
+```
+
+### Extract the first sentences of a document
+To extract the opening sentences of a document, use the `opening-text.py` tool:
+Example output (truncated for readability):
+```
+{
+"id":"example.html",
+"doc_summary_short":"<p>ON FEBRUARY 3, A TELEVISION VIEWER in southeast Texas submitted a complaint to the Federal Communications Commission about CNN ...</p>"
+"doc_summary_long":"<p>ON FEBRUARY 3, A TELEVISION VIEWER in southeast Texas submitted a complaint to the Federal Communications Commission about CNN ...</p><p> ... </p><p> ... </p>"
+}
+```
+Note that `<p>...</p>` tags are used to explicitly denote sentence boundaries, and that the tool is currently configured to output
+the first sentence as the short summary, and the first three sentences as the long summary.
 
 ## Summary data to speech
 The `summary-to-speech.py` script reads through a `json` file containing
