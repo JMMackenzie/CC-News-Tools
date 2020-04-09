@@ -28,17 +28,35 @@ Example output (truncated for readability):
 
 ### Extract the first sentences of a document
 To extract the opening sentences of a document, use the `opening-text.py` tool:
+```
+python opening-text.py example.html
+```
 Example output (truncated for readability):
 ```
 {
 "id":"example.html",
-"doc_summary_short":"<p>ON FEBRUARY 3, A TELEVISION VIEWER in southeast Texas submitted a complaint to the Federal Communications Commission about CNN ...</p>"
+"tittle":"<p>TV viewers have been sending ‘fake news’ complaints to the FCC</p>",
+"doc_summary_short":"<p>ON FEBRUARY 3, A TELEVISION VIEWER in southeast Texas submitted a complaint to the Federal Communications Commission about CNN ...</p>",
 "doc_summary_long":"<p>ON FEBRUARY 3, A TELEVISION VIEWER in southeast Texas submitted a complaint to the Federal Communications Commission about CNN ...</p><p> ... </p><p> ... </p>"
 }
 ```
 Note that `<p>...</p>` tags are used to explicitly denote sentence boundaries, and that the tool is currently configured to output
 the first sentence as the short summary, and the first three sentences as the long summary.
 
+### Get an extractive summary of a document
+Use the `extractive-summary.py` tool:
+```
+python extractive-summary.py example.html
+```
+Example output (truncated):
+```
+{
+"id":"example.html",
+"title":"<p>TV viewers have been sending ‘fake news’ complaints to the FCC</p>",
+"doc_summary_short":"<p>Below is a selection of the complaints, each accompanied by its place of origin and the date it was filed.</p>",
+"doc_summary_long":"<p>Below is a selection of the complaints, each accompanied by its place of origin and the date it was filed.</p><p> ... </p><p> ... </p>"
+}
+```
 ## Summary data to speech
 The `summary-to-speech.py` script reads through a `json` file containing
 the document summary information, and generates a spoken version of the

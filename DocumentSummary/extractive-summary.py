@@ -23,20 +23,20 @@ if __name__ == "__main__":
   article = Article(url="test", MAX_SUMMARY_SENT = 3)
   article.download(input_html=text)
   article.parse()
-
+  # NLP for summarization
+  article.nlp()
   title = normalize(article.title)
   title = "<p>" + title + "</p>"
-  text = normalize(article.text)
-  # Split sentences by newline
-  sentences = text.split("\n")
+  summary = normalize(article.summary)
+
+  # Split summary by newline
+  sentences = summary.split("\n")
   # Filter out empty sentences
   sentences = list(filter(None, sentences))
-  # Join sentences back together
-  sent = " ".join(s for s in sentences)
 
-  # Short summary is the first line of the article
+  # Short summary is the first line of the summary
   summary_short = "<p>" + sentences[0] + "</p>"
-  # Long summary is the first three lines of the article
+  # Long summary is the first three lines of the summary
   summary_long = ""
   for sent in sentences[:3]:
     summary_long += "<p>" + sent + "</p>"
