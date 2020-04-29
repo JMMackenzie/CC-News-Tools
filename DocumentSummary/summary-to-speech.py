@@ -15,6 +15,8 @@ except NameError:
 def usage():
   print(sys.argv[0] + " <json file> ")
 
+def strip_tags(string):
+  return string.replace("<p>", "").replace("</p>", " ")
 
 logger = open("audio.log", "a")
 
