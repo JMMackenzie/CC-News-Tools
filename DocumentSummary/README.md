@@ -7,6 +7,7 @@ These scripts make use of the [newspaper3k](https://github.com/codelucas/newspap
 ```
 pip3 install newspaper3k
 ```
+We used Python 3.6.7.
 
 ### Extract document text
 In order to extract the text from a document, you will need the raw HTML representation. 

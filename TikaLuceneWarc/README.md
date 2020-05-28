@@ -10,6 +10,9 @@ This codebase requires the pre-trained Apache OpenNLP language detection
 model, which has been included by default in the `external/` directory.
 More information can be found at [OpenNLP](http://opennlp.apache.org/models.html).
 
+Our pipeline used [Tika 1.13](https://tika.apache.org/1.13/)
+and [OpenNLP 1.84](https://opennlp.apache.org/docs/1.8.4/manual/opennlp.html)/
+
 # Installation
 
 ```
