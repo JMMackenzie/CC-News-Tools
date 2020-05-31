@@ -23,23 +23,23 @@ The CC-News-En corpus is derived from the CC-News crawl, which is made
 possible by the [Common Crawl Foundation](https://commoncrawl.org/).
 
 ## Building CC-News-En from scratch
-**Located in the TikaLuceneWarc directory.**
+**Located in the TikaLuceneWarc directory.**\
 Based on the original [TikaLuceneWarc](https://github.com/mpetri/TikaLuceneWarc)
 library, this contains the code required to process the corpus, including
 both downloading the raw data and doing the English filtering.
 
 ## Building an Indri Index over CC-News-En
-**Located in the IndriIndex directory.**
+**Located in the IndriIndex directory.**\
 Tools for building an [Indri](http://www.lemurproject.org/indri/) index over 
 CC-News-En. 
 
 ## Getting popularity data from Reddit
-**Located in the RedditTitle directory.**
+**Located in the RedditTitle directory.**\
 Scripts for crawling temporally relevant Reddit Titles. These tools are based
 on the [Pushshift](https://github.com/pushshift/api) Reddit API.
 
 ## Building document summaries
-**Located in the DocumentSummary directory.**
+**Located in the DocumentSummary directory.**\
 Scripts and tools for generating document summary information. Also includes
 scripts for generating audio transcripts of summaries.
 
