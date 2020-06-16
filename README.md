@@ -15,12 +15,16 @@ If you use the `CC-News-En` collection, please cite the overview paper:
 }
 ```
 
+## Data
 If you are just looking for the raw corpus and query data, you can download it 
 from [AARNET CloudStor](https://cloudstor.aarnet.edu.au/plus/s/M8BvXxe6faLZ4uE).
 
-We also provide a [Common Index File Format (CIFF)](https://github.com/osirrc/ciff) 
+## Common Index File Format
+We provide a [Common Index File Format (CIFF)](https://github.com/osirrc/ciff) 
 blob built from an [Anserini](https://github.com/castorini/anserini) index of CC-News-En
-at the same URL.
+at the same URL. This allows users to adapt the Anserini (Lucene) index to a number of
+other systems (or write their own CIFF ingestor for their selected system). Please see
+the CIFF repo (and the associated paper) for further information on the format.
 
 ## Credits
 The CC-News-En corpus is derived from the CC-News crawl, which is made
