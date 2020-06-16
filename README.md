@@ -18,6 +18,10 @@ If you use the `CC-News-En` collection, please cite the overview paper:
 If you are just looking for the raw corpus and query data, you can download it 
 from [AARNET CloudStor](https://cloudstor.aarnet.edu.au/plus/s/M8BvXxe6faLZ4uE).
 
+We also provide a [Common Index File Format (CIFF)](https://github.com/osirrc/ciff) 
+blob built from an [Anserini](https://github.com/castorini/anserini) index of CC-News-En
+at the same URL.
+
 ## Credits
 The CC-News-En corpus is derived from the CC-News crawl, which is made
 possible by the [Common Crawl Foundation](https://commoncrawl.org/).
