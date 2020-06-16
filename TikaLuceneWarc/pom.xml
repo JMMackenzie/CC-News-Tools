@@ -9,7 +9,7 @@
   <url>http://maven.apache.org</url>
 
   <properties>
-    <LUCENE_VERSION>5.3.1</LUCENE_VERSION>
+    <LUCENE_VERSION>8.5.1</LUCENE_VERSION>
 </properties>
 
 
