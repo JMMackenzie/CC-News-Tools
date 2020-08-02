@@ -9,8 +9,8 @@ If you use the `CC-News-En` collection, please cite the overview paper:
 @inproceedings{ccnews2020,
  title = {CC-News-En: A Large English News Corpus},
  authors = {J. Mackenzie and R. Benham and M. Petri and J. R. Trippas and J. S. Culpepper and A. Moffat},
- booktitle = {Under Review},
- pages = {},
+ booktitle = {Proc. CIKM},
+ pages = {To Appear},
  year = {2020},
 }
 ```
@@ -18,6 +18,10 @@ If you use the `CC-News-En` collection, please cite the overview paper:
 ## Credits
 The CC-News-En corpus is derived from the CC-News crawl, which is made
 possible by the [Common Crawl Foundation](https://commoncrawl.org/).
+
+## Paper
+The paper describing the dataset will be available soon. In the meantime, please take a look at the data
+at the URL below.
 
 ## Data
 If you are just looking for the raw corpus and query data, you can download it 
@@ -29,6 +33,8 @@ blob built from an [Anserini](https://github.com/castorini/anserini) index of CC
 at the same URL. This allows users to adapt the Anserini (Lucene) index to a number of
 other systems (or write their own CIFF ingestor for their selected system). Please see
 the CIFF repo (and the associated paper) for further information on the format.
+Finally, we also provide the normalized queries with the same preprocessing as the
+underlying CIFF index (from Lucene) so you can get started right away.
 
 ## Building CC-News-En from scratch
 **Located in the TikaLuceneWarc directory.**\
