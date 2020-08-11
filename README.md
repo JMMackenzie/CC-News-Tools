@@ -14,6 +14,7 @@ If you use the `CC-News-En` collection, please cite the overview paper:
  year = {2020},
 }
 ```
+The paper can be found at the following DOI: https://doi.org/10.1145/3340531.3412762
 
 ## Credits
 The CC-News-En corpus is derived from the CC-News crawl, which is made
