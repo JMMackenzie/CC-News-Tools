@@ -8,7 +8,7 @@ If you use the `CC-News-En` collection, please cite the overview paper:
 ```
 @inproceedings{ccnews2020,
  title = {CC-News-En: A Large English News Corpus},
- authors = {J. Mackenzie and R. Benham and M. Petri and J. R. Trippas and J. S. Culpepper and A. Moffat},
+ author = {J. Mackenzie and R. Benham and M. Petri and J. R. Trippas and J. S. Culpepper and A. Moffat},
  booktitle = {Proc. CIKM},
  pages = {To Appear},
  year = {2020},
