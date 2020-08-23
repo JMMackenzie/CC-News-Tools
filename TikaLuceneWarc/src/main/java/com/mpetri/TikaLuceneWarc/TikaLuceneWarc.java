@@ -1,4 +1,4 @@
-package com.mpetri.TikaDocsWarc;
+package com.mpetri.TikaLuceneWarc;
 
 import static java.nio.file.FileVisitOption.*;
 import static java.nio.file.FileVisitResult.*;
@@ -34,7 +34,7 @@ import org.xml.sax.SAXException;
 import opennlp.tools.langdetect.*;
 import opennlp.tools.util.*;
 
-public final class TikaDocsWarc {
+final class TikaLuceneWarc {
   public static final String FIELD_BODY = "contents";
   public static final String FIELD_URL = "url";
   public static final String FIELD_REALURL = "rurl";
@@ -84,7 +84,7 @@ public final class TikaDocsWarc {
 
     // Handles the processing of a single WARC file
     public Integer call() {
-      final Logger LOG = LogManager.getLogger(TikaDocsWarc.class);
+      final Logger LOG = LogManager.getLogger(TikaLuceneWarc.class);
       int docCount = 0; // Counts documents seen in this WARC file
 
       // (1) open warc file
@@ -226,7 +226,7 @@ public final class TikaDocsWarc {
 
   // Main method
   public static void main(String[] args) throws Exception {
-    final Logger LOG = LogManager.getLogger(TikaDocsWarc.class);
+    final Logger LOG = LogManager.getLogger(TikaLuceneWarc.class);
 
     // (0) parse command line options
     Options options = new Options();
@@ -261,7 +261,7 @@ public final class TikaDocsWarc {
     }
     if (inputDir == "" || languageModel == "" || outputDir == "") {
       HelpFormatter formatter = new HelpFormatter();
-      formatter.printHelp("TikaDocsWarc", options);
+      formatter.printHelp("TikaLuceneWarc", options);
       System.err.println("Command line parsing failed. missing input/base/output.");
       return;
     }
