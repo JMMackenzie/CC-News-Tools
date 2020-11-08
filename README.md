@@ -10,7 +10,7 @@ If you use the `CC-News-En` collection, please cite the overview paper:
  title = {CC-News-En: A Large English News Corpus},
  author = {J. Mackenzie and R. Benham and M. Petri and J. R. Trippas and J. S. Culpepper and A. Moffat},
  booktitle = {Proc. CIKM},
- pages = {To Appear},
+ pages = {3077--3084},
  year = {2020},
 }
 ```
@@ -27,6 +27,10 @@ at the URL below.
 ## Data
 If you are just looking for the raw corpus and query data, you can download it 
 from [AARNET CloudStor](https://cloudstor.aarnet.edu.au/plus/s/M8BvXxe6faLZ4uE).
+
+The `get_warc.sh` script provides a simple method of downloading the warc file-by-file. Users may wish to
+adapt this script for their own needs (with parallel downloads, for example).
+
 
 ## Common Index File Format
 We provide a [Common Index File Format (CIFF)](https://github.com/osirrc/ciff) 
@@ -57,4 +61,5 @@ on the [Pushshift](https://github.com/pushshift/api) Reddit API.
 **Located in the DocumentSummary directory.**\
 Scripts and tools for generating document summary information. Also includes
 scripts for generating audio transcripts of summaries.
+
 
