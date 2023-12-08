@@ -3,6 +3,13 @@ This repo contains a number of tools that assist in working with the
 *Common Crawl News* collection. In particular, the *CC-News-En* corpus
 can be reproduced or extended using these tools. 
 
+## Updates: 2023
+Unfortunately, the original location of the data (AARNet's CloudStor) has been decomissioned.
+The data has since been moved to UQ's Research Data Manager and has a DOI associated. You can find the data at the following locations:
+- https://espace.library.uq.edu.au/view/UQ:1dcb974
+- https://doi.org/10.48610/1dcb974
+- https://rdm.uq.edu.au/files/238cdc40-931e-11ee-9730-a955da3eaf7d
+
 ## Usage
 If you use the `CC-News-En` collection, please cite the overview paper:
 ```
@@ -25,11 +32,13 @@ The paper describing the dataset will be available soon. In the meantime, please
 at the URL below.
 
 ## Data
-If you are just looking for the raw corpus and query data, you can download it 
-from [AARNET CloudStor](https://cloudstor.aarnet.edu.au/plus/s/M8BvXxe6faLZ4uE).
+~~If you are just looking for the raw corpus and query data, you can download it 
+from [AARNET CloudStor](https://cloudstor.aarnet.edu.au/plus/s/M8BvXxe6faLZ4uE).~~
 
-The `get_warc.sh` script provides a simple method of downloading the warc file-by-file. Users may wish to
-adapt this script for their own needs (with parallel downloads, for example).
+~~The `get_warc.sh` script provides a simple method of downloading the warc file-by-file. Users may wish to
+adapt this script for their own needs (with parallel downloads, for example).~~
+
+Please see the "Updates" section at the top of the README. Further instructions for accessing the data will be made available once the data is ready in UQ RDM.
 
 
 ## Common Index File Format
